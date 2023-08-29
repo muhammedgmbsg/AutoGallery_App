@@ -1,0 +1,659 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{063ACB76-8AAB-4C8D-84EA-61EFE10AE65D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OtoGaleri</RootNamespace>
+    <AssemblyName>OtoGaleri</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Muhammed\Desktop\OtoGaleri\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F9FC1A8F4FF36A852ACCB46542B3B1973DF2AE96</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>OtoGaleri_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Elegantthemes-Beautiful-Flat-One-Color-Car.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTransition">
+      <HintPath>..\..\..\..\Bnfu_1.5.3_crack\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlSat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlSat.Designer.cs">
+      <DependentUpon>AlSat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AracBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AracBilgi.Designer.cs">
+      <DependentUpon>AracBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AracDegisen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AracDegisen.Designer.cs">
+      <DependentUpon>AracDegisen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aracdegisen\ADkaput.cs" />
+    <Compile Include="AracGoruntuleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AracGoruntuleme.Designer.cs">
+      <DependentUpon>AracGoruntuleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AracGoruntuSeri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AracGoruntuSeri.Designer.cs">
+      <DependentUpon>AracGoruntuSeri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AracSatınYontem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AracSatınYontem.Designer.cs">
+      <DependentUpon>AracSatınYontem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AracSatısYontem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AracSatısYontem.Designer.cs">
+      <DependentUpon>AracSatısYontem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AracSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AracSil.Designer.cs">
+      <DependentUpon>AracSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AracYukleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AracYukleme.Designer.cs">
+      <DependentUpon>AracYukleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BakiyeIslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BakiyeIslem.Designer.cs">
+      <DependentUpon>BakiyeIslem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BakiyeKontrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BakiyeKontrol.Designer.cs">
+      <DependentUpon>BakiyeKontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EkleSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EkleSil.Designer.cs">
+      <DependentUpon>EkleSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HavaleSatınAl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HavaleSatınAl.Designer.cs">
+      <DependentUpon>HavaleSatınAl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HavaleSatısYap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HavaleSatısYap.Designer.cs">
+      <DependentUpon>HavaleSatısYap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KayitOl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KayitOl.Designer.cs">
+      <DependentUpon>KayitOl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciGiris.Designer.cs">
+      <DependentUpon>KullaniciGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NakitSatınAl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NakitSatınAl.Designer.cs">
+      <DependentUpon>NakitSatınAl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NakitSatısYap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NakitSatısYap.Designer.cs">
+      <DependentUpon>NakitSatısYap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParaCekme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParaCekme.Designer.cs">
+      <DependentUpon>ParaCekme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParaYukleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParaYukleme.Designer.cs">
+      <DependentUpon>ParaYukleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SifreYenile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifreYenile.Designer.cs">
+      <DependentUpon>SifreYenile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SirketHesap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SirketHesap.Designer.cs">
+      <DependentUpon>SirketHesap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SirketHesapGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SirketHesapGuncelle.Designer.cs">
+      <DependentUpon>SirketHesapGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SİfreTekrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SİfreTekrar.Designer.cs">
+      <DependentUpon>SİfreTekrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İşlemler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İşlemler.Designer.cs">
+      <DependentUpon>İşlemler.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AlSat.resx">
+      <DependentUpon>AlSat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AracBilgi.resx">
+      <DependentUpon>AracBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AracDegisen.resx">
+      <DependentUpon>AracDegisen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AracGoruntuleme.resx">
+      <DependentUpon>AracGoruntuleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AracGoruntuSeri.resx">
+      <DependentUpon>AracGoruntuSeri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AracSatınYontem.resx">
+      <DependentUpon>AracSatınYontem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AracSatısYontem.resx">
+      <DependentUpon>AracSatısYontem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AracSil.resx">
+      <DependentUpon>AracSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AracYukleme.resx">
+      <DependentUpon>AracYukleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BakiyeIslem.resx">
+      <DependentUpon>BakiyeIslem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BakiyeKontrol.resx">
+      <DependentUpon>BakiyeKontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EkleSil.resx">
+      <DependentUpon>EkleSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HavaleSatınAl.resx">
+      <DependentUpon>HavaleSatınAl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HavaleSatısYap.resx">
+      <DependentUpon>HavaleSatısYap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KayitOl.resx">
+      <DependentUpon>KayitOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciGiris.resx">
+      <DependentUpon>KullaniciGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NakitSatınAl.resx">
+      <DependentUpon>NakitSatınAl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NakitSatısYap.resx">
+      <DependentUpon>NakitSatısYap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParaCekme.resx">
+      <DependentUpon>ParaCekme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParaYukleme.resx">
+      <DependentUpon>ParaYukleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SifreYenile.resx">
+      <DependentUpon>SifreYenile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SirketHesap.resx">
+      <DependentUpon>SirketHesap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SirketHesapGuncelle.resx">
+      <DependentUpon>SirketHesapGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SİfreTekrar.resx">
+      <DependentUpon>SİfreTekrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İşlemler.resx">
+      <DependentUpon>İşlemler.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="OtoGaleri_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KullaniciGiris.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KullaniciGiris1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gİRİSkULLANİCİ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GIRIS1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KayitOl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KayitOl1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kayitt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kayitt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kayitt2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sifre Unuttum.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\İşlemler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\islemler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %283%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %283%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %286%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %287%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %287%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %287%293.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2810%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2811%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2812%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2813%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2814%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2815%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2816%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2817%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2819%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2820%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2821%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2822%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2823%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2824%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2825%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2826%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2828%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2829%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2830%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fvbndn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2831%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2832%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2832%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2833%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Siyah ve Camgöbeği E-Spor İllüst.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\151.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\171.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2834%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2835%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2836%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2837%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2838%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2839%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2840%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2842%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2841%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2843%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2844%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2846%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2846%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2847%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2848%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2849%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2850%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2849%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2851%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2852%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Gradient Memphis Disruptive Brainstorming Online Whiteboard %2853%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Elegantthemes-Beautiful-Flat-One-Color-Car.ico" />
+    <Content Include="Galeri_DB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Galeri_DB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Galeri_DB.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
